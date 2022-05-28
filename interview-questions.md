@@ -10,15 +10,15 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: A parameter goes next to a variable function and a argument goes with an if statement.
 
-  Researched answer: Parameters are properties of a function. Arguments are properties of a particular call to a function.
+  Researched answer: Parameters are properties of a function. Arguments are properties of a particular call to a function.You would use parameters as placeholders for an arugument in a function.A argument has to be a datatype recoginized by javascript and that data type is passed inside the parenthesis of a function invocation. The parameter and argument are different because the argument is using the parameter () to create an argument in console log. 
 
 
 
 2. The JavaScript built in method .map() takes predefined parameters. What are they? Which are required and which are optional?
 
-  Your answer: Key values amd arrays. Both are optional.
+  Your answer: The built in methods are key values and arrays. Both are optional.
 
-  Researched answer:.map() have three built-in parameters - the value, index, and array. The index and array are both optional.
+  Researched answer: .map() is a higherorder function that has three built predefined parameters which are the value, index, and array. The index and array are both optional. The value is always required.
 
 
 
@@ -26,7 +26,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Map is returning a new element to a new array. Filter is the same as Map but  returns the index. 
 
-  Researched answer:The .map() function iterates through an array and returns a new array of the same length.The .filter() function loops through an array and returns a new array with only the values that are truthy or the values that satisfy your stated condition.
+  Researched answer:The .map() function iterates through an array and returns a new array of the same length. The .filter() function loops through an array and returns a new array with only the values that are truthy or the values that satisfy your stated condition. Filter returns subset of the given array.
 
 
 
@@ -35,7 +35,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
   Your answer: A function is telling a computer how to do something.A method is deals with objects in the function.
 
 
-  Researched answer: The difference is that a method is associated with an object, while a function is not.
+  Researched answer: The difference is that a method is associated with an object, while a function is not.methods ar functions stored as object properties. A function takes on a task,takes in value,takes in an input and returns an output.
 
 
 
@@ -44,7 +44,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Object destructuring is like breaking variables down or being more specific.
 
-  Researched answer: Object destructuring allows you to take something like an array or an object and unpack their values into individual variables.
+  Researched answer: Object destructuring allows you to take something like an array or an object and unpack their values into individual variables. 
 
 
 
@@ -52,7 +52,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Hoisting in javascript is moving code up.
 
-  Researched answer: Hoisting is moving declarations to the top.
+  Researched answer: Hoisting is functions or variable used before declarations.
 
 
 

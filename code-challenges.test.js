@@ -56,14 +56,14 @@ describe("numbs", () => {
 
 
 // b) Create the function that makes the test pass.
-  //  const numbs = (number) => {
-  //    if(number %3 ===0) {
-  //      return `${number} is divisible by three`
-  //    } else if(number %3 !==0){
-  //      return `${number} is not divisible by three`
-  //    }
-  //  }
-
+   const numbs = (number) => {
+     if(number %3 ===0) {
+       return `${number} is divisible by three`
+     } else if(number %3 !==0){
+       return `${number} is not divisible by three`
+     }
+   }
+console.log(numbs);
 
 
 
@@ -84,67 +84,97 @@ describe("numbs", () => {
 
 // a) Create a test with expect statements for each of the variables provided.
 
+describe("nouns", () => {
 const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
 const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
 
-// describe(randomNouns1,randomNouns2 () => {
-//      it("returns".Uppercase , () => {
-//   expect(randomNouns1,randomNouns2()).toEqual(.map)    
-//    })
-//      })
+it("takes in an array of words and returns an array with all the words capitalized", () => {
+  expect(nouns(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+  expect(nouns(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
+  
+})  
+})  
+ 
+//  FAIL  ./code-challenges.test.js
+// numbs
+//   ✕ takes a number as an argument and decides if the number is evenly divisble by three or not (2 ms)
+// nouns
+//   ✕ takes in an array of words and returns an array with all the words capitalized
 
-// // b) Create the function that makes the test pass.
-//  {
-//     if (randomNouns1.length) {
-//       return [randomNouns1[0].toUpperCase()];
-//     }
-//     let res = capitalizeWords(randomNouns2.slice(0));
-//     res.push(randomNouns2.slice(randomNouns2.length)[0].toUpperCase());
-//     return res;
-   
-//   }
-// console.log(randomNouns1,randomNouns1);
+// ● numbs › takes a number as an argument and decides if the number is evenly divisble by three or not
 
-//create a function 
-// capitilize the letters in the array at the 0 index
+
+
+
+// b) Create the function that makes the test pass.
+const nouns = (array) => {
+ } if (i == 0 || nouns[i].charAt(0) == nouns[i].charAt(0).toUpperCase()) {
+    arr[0] = arr[0].charAt(0).toUpperCase();
+  }
+  
+console.log(nouns.toUpperCase);
+
+// declare a function
+// capitilize the letters in the array at the 0 index using indexOf
 //use UpperCase to capitilize 
-//My output didnt comeback as uppercase.
+//
 
 
 // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
 
 // a) Create a test with expect statements for each of the variables provided.
  
-describe(vowels,() => {
-const vowelTester1 = "learn"
-// Expected output: 1
-const vowelTester2 = "academy"
-// Expected output: 0
+
+ describe(vowels,() => {
+
+  const vowelTester1 = "learn"
+  // Expected output: 1
+  const vowelTester2 = "academy"
+  // Expected output: 0
 const vowelTester3 = "challenges"
 // Expected output: 2
 
    it( "takes in a string and logs the index of the first vowel", () => {         
-     expect(vowels(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])    
-       expect(vowels(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
+     expect(vowels(vowelTester1)).toEqual(1)    
+       expect(vowels(vowelTester2)).toEqual(0)
+      expect(vowels(vowelTester3)).toEqual(2)
        })
-//     })
-// // b) Create the function that makes the test pass.
-
-// //Make a function thats counts the vowel in vowelTester1,vowelTester2,vowelTester3
-
-// if(vowel === "learn") {
-//     return "1"
-//     else if(vowelTester2 === "academy"){
-//         return "0" 
-//     }
-//     else if(vowelTester3 === "challenges")
-//     return "2"
-// }
-
-// console.log(vowelTester1,vowelTester2,vowelTester3)
+    })
 
 
- //made a if state
- //logged vowelTester got back errors
+    // b) Create the function that makes the test pass.
+
+    // FAIL  ./code-challenges.test.js
+    // ● Test suite failed to run
+  
+    //   SyntaxError: /Users/learnacademy/Desktop/week-2-assessment-DavonKenn/code-challenges.test.js: Unexpected token, expected "," (149:42)
+  
+    //     147 |     // b) Create the function that makes the test pass.
+    //     148 |
+    //   > 149 | const vowels = (/[aeiou]/).split(seperator:"");
+    //         |                                           ^
+    //     150 | let count = 0
+    //     151 |    
+    //     152 | for (const cur of structuredClone.toLowerCase() {
+  
+
+//  Create a function that takes in a string and returns the index of the first vowel
+// identify what method i need to use to find the first vowel
+// find count of vowels
+// return number of vowels
+
+function countVowel(str) { 
+
+  const count = str.match(/[aeiou]/gi).length;
+
+  
+  return count;
+}
+
+const string = prompt("learn");
+
+const result = countVowel(string);
+
+console.log(result);
